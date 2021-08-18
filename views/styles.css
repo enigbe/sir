@@ -273,6 +273,21 @@ textarea.field {
   color: #f7f7f7;
 }
 
+.btn:hover {
+  color: #f7f7f7;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.success {
+  color: green;
+  padding-bottom: 0.5rem;
+}
+
+.not-sent {
+  color: red;
+}
+
 /* Media Querries */
 @media screen and (max-width: 1200px) {
   .right-title::after {
