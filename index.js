@@ -53,6 +53,6 @@ app.post(
         
 });
 
-app.listen(PORT || 3002, () => {
+app.listen(keys.PORT, () => {
     console.log('Listening');
 })
