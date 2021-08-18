@@ -2,10 +2,10 @@ const express = require('express');
 const path = require('path');
 const { validationResult } = require('express-validator');
 const sendEmail = require('./email');
+const keys = require('./config/keys');
 
 const { validateEmailContent, validateEmailSubject, validateSenderEmail} = require('./validators');
 
-const PORT = 4000;
 const app = express();
 
 const getError = (errors, prop) => {
