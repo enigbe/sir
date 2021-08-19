@@ -7,7 +7,8 @@ A simple interactive resume with contact form
 On a unix-based computer or with Git-bash for Windows run the following commands
 1. Clone repo to a user-owned directory and cd into
 2. Run: ```npm start```
-3. Visit: ```localhost:4000/```
+3. Visit: ```GET /``` to view resume
+4. Visit: ```GET /name``` to view name
 
 ---
 ### learning partners:

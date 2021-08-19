@@ -19,6 +19,11 @@ app.get('/', (req, res) => {
     res.status(200).render('index.ejs');
 });
 
+app.get('/name', (req, res) => {
+    const name = 'Enigbe Ochekliye';
+    res.send(`Name: ${name}`);
+});
+
 app.post(
     '/email', 
     [validateSenderEmail, validateEmailSubject, validateEmailContent], 
