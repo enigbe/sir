@@ -32,10 +32,8 @@ app.post(
 
         sendEmail(sender_email, email_subject, email_content, (error, data) => {
             if (error) {
-                // res.status(500).json({ msg: 'Error sending email'});
                 res.status(500).render('failure.ejs',{ msg: 'Error sending email'});
             } else {
-                // res.status(200).json({ msg: 'Email sent successfully'})
                 res.status(200).render('success.ejs',{ msg: 'Email sent successfully'});
             }
         });
